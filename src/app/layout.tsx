@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import { url_dominio } from "@/contants";
+import { google_console_cod, url_dominio } from "@/contants";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "seu-codigo-google-search-console", // Adicionar código real
+    google: google_console_cod, // Adicionar código real
   },
   category: "education",
 };

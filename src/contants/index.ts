@@ -18,7 +18,9 @@ import {
   Facebook,
 } from "lucide-react";
 
-export const url_dominio = process.env.URL_DOMINIO || "localhost";
+export const url_dominio = process.env.URL_DOMINIO || "http://localhost:3000/";
+export const google_console_cod =
+  process.env.GOOGLE_CONSOLE_COD || "seu-codigo-google-search-console";
 
 export type advantagesType = (typeof advantages)[0];
 export const advantages = [
