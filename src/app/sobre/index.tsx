@@ -7,13 +7,13 @@ import { LucideIcon } from "lucide-react";
 import { stats, values } from "@/contants";
 import Image from "next/image";
 
-export default function AboutPage() {
+export default function SobreNosPage() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section
-      id="about"
+      id="sobre"
       ref={ref}
       className="py-20 px-4 bg-white overflow-hidden"
     >

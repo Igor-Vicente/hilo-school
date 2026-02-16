@@ -14,6 +14,8 @@ import {
   Clock,
   Phone,
   Mail,
+  Instagram,
+  Facebook,
 } from "lucide-react";
 export type advantagesType = (typeof advantages)[0];
 
@@ -188,5 +190,37 @@ export const faqs = [
     question: "Como faço para me matricular?",
     answer:
       "É simples! Entre em contato via WhatsApp (19) 99604-2420, agende uma visita ou aula experimental, faça o teste de nivelamento e escolha o melhor plano para você. Nossa equipe te acompanha em todo o processo!",
+  },
+];
+
+export const quickLinks = [
+  { name: "Inicio", href: "#home" },
+  { name: "Quem Somos", href: "#sobre" },
+  { name: "Vantagens", href: "#vantagens" },
+  { name: "Localização", href: "#localizacao" },
+  { name: "Dúvidas", href: "#duvidas" },
+];
+
+export const services = [
+  "Aulas para Crianças",
+  "Aulas para Jovens",
+  "Aulas para Adultos",
+  "Aulas Corporativas",
+  "Aulas Online",
+  "Serviços de Interpretação",
+];
+
+export const socialLinks = [
+  {
+    name: "Instagram",
+    icon: Instagram,
+    href: "https://www.instagram.com/hiloschool_/",
+    color: "hover:text-pink-500",
+  },
+  {
+    name: "Facebook",
+    icon: Facebook,
+    href: "https://www.facebook.com/hilorenaes/",
+    color: "hover:text-blue-600",
   },
 ];

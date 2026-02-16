@@ -6,12 +6,12 @@ import { useRef } from "react";
 import { MapPin, Phone, Navigation, Building2, LucideIcon } from "lucide-react";
 import { locationInfo } from "@/contants";
 
-export default function LocationSection() {
+export default function LocalizacaoPage() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="location" ref={ref} className="py-20 px-4 overflow-hidden">
+    <section id="localizacao" ref={ref} className="py-20 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div

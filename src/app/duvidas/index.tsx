@@ -6,7 +6,7 @@ import { useRef, useState } from "react";
 import { ChevronDown, HelpCircle } from "lucide-react";
 import { faqs } from "@/contants";
 
-export default function FAQPage() {
+export default function DuvidasPage() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   const [openIndex, setOpenIndex] = useState<number | null>(0); // Primeira pergunta aberta por padrão
@@ -16,7 +16,7 @@ export default function FAQPage() {
   };
 
   return (
-    <section id="faq" ref={ref} className="py-20 px-4 overflow-hidden">
+    <section id="duvidas" ref={ref} className="py-20 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div

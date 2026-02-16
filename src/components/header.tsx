@@ -3,13 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-
-const navLinks = [
-  { name: "Vantagens", href: "#advantages" },
-  { name: "Quem somos", href: "#about" },
-  { name: "Dúvidas", href: "#faq" },
-  { name: "Onde nos encontrar", href: "#location" },
-];
+import { quickLinks } from "@/contants";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +25,7 @@ export default function Header() {
           <div className="flex items-center justify-end">
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-1">
-              {navLinks.map((link, index) => (
+              {quickLinks.map((link, index) => (
                 <motion.a
                   key={link.name}
                   href={link.href}
@@ -98,7 +92,7 @@ export default function Header() {
           transition={{ duration: 0.3 }}
         >
           <div className="py-4">
-            {navLinks.map((link, index) => (
+            {quickLinks.map((link, index) => (
               <motion.a
                 key={link.name}
                 href={link.href}

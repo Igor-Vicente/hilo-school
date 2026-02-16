@@ -5,13 +5,13 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { advantages, advantagesType } from "../../contants";
 
-export default function AdvantagesPage() {
+export default function VantagensPage() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section
-      id="advantages"
+      id="vantagens"
       ref={ref}
       className="py-20 px-4 overflow-hidden bg-linear-to-br from-purple-50 via-white to-indigo-50"
     >

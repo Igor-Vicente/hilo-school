@@ -1,18 +1,18 @@
 import Footer from "@/components/footer";
-import AboutPage from "./about";
-import AdvantagesPage from "./advantages";
-import FAQPage from "./faq";
 import HomePage from "./home";
-import LocationPage from "./location";
+import SobreNosPage from "./sobre";
+import LocalizacaoPage from "./localizacao";
+import DuvidasPage from "./duvidas";
+import VantagensPage from "./vantagens";
 
 export default function Home() {
   return (
     <>
       <HomePage />
-      <AboutPage />
-      <AdvantagesPage />
-      <LocationPage />
-      <FAQPage />
+      <SobreNosPage />
+      <VantagensPage />
+      <LocalizacaoPage />
+      <DuvidasPage />
       <Footer />
     </>
   );

@@ -90,7 +90,7 @@ export default function HomePage() {
                 </motion.a>
 
                 <motion.a
-                  href="#about"
+                  href="#sobre"
                   className="px-10 py-5 text-lg font-semibold text-gray-700 hover:text-purple-600 transition-colors flex items-center justify-center gap-2 group"
                   whileHover={{ x: 5 }}
                   whileTap={{ scale: 0.95 }}

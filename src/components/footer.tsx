@@ -3,16 +3,9 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Clock,
-  Instagram,
-  Facebook,
-  ArrowUp,
-} from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ArrowUp } from "lucide-react";
 import Image from "next/image";
+import { quickLinks, services, socialLinks } from "@/contants";
 
 export default function Footer() {
   const ref = useRef(null);
@@ -21,38 +14,6 @@ export default function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
-  const quickLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Vantagens", href: "#advantages" },
-    { name: "Quem Somos", href: "#about" },
-    { name: "Localização", href: "#location" },
-    { name: "FAQ", href: "#faq" },
-  ];
-
-  const services = [
-    "Aulas para Crianças",
-    "Aulas para Jovens",
-    "Aulas para Adultos",
-    "Aulas Corporativas",
-    "Aulas Online",
-    "Serviços de Interpretação",
-  ];
-
-  const socialLinks = [
-    {
-      name: "Instagram",
-      icon: Instagram,
-      href: "https://www.instagram.com/hiloschool_/",
-      color: "hover:text-pink-500",
-    },
-    {
-      name: "Facebook",
-      icon: Facebook,
-      href: "https://www.facebook.com/hilorenaes/",
-      color: "hover:text-blue-600",
-    },
-  ];
 
   return (
     <footer
@@ -273,7 +234,7 @@ export default function Footer() {
       {/* Scroll to Top Button */}
       <motion.button
         onClick={scrollToTop}
-        className="fixed bottom-8 right-8 w-12 h-12 bg-linear-to-br from-purple-600 to-indigo-600 rounded-full shadow-lg shadow-purple-500/50 flex items-center justify-center hover:shadow-xl transition-all z-50 group"
+        className="fixed bottom-8 right-8 w-12 h-12 bg-linear-to-br from-purple-600 to-indigo-600 rounded-full shadow-lg shadow-purple-500/50 flex items-center justify-center z-50 group cursor-pointer"
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         whileHover={{ scale: 1.1, y: -3 }}
