@@ -198,11 +198,11 @@ export const faqs = [
 ];
 
 export const quickLinks = [
-  { name: "Inicio", href: "#home" },
-  { name: "Quem Somos", href: "#sobre" },
-  { name: "Vantagens", href: "#vantagens" },
-  { name: "Localização", href: "#localizacao" },
-  { name: "Dúvidas", href: "#duvidas" },
+  { name: "Inicio", href: "home" },
+  { name: "Quem Somos", href: "sobre" },
+  { name: "Vantagens", href: "vantagens" },
+  { name: "Localização", href: "localizacao" },
+  { name: "Dúvidas", href: "duvidas" },
 ];
 
 export const services = [

@@ -15,6 +15,20 @@ export default function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const handleNavigation = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    e.preventDefault();
+    const elem = document.getElementById(href);
+
+    if (elem) {
+      elem.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <footer
       ref={ref}
@@ -94,8 +108,8 @@ export default function Footer() {
                   transition={{ delay: 0.3 + index * 0.05 }}
                 >
                   <a
-                    href={link.href}
-                    className="text-gray-300 hover:text-purple-300 transition-colors inline-flex items-center gap-2 group"
+                    onClick={(e) => handleNavigation(e, link.href)}
+                    className="text-gray-300 hover:text-purple-300 transition-colors inline-flex items-center gap-2 group cursor-pointer"
                   >
                     <span className="w-1.5 h-1.5 bg-purple-400 rounded-full group-hover:w-2 group-hover:h-2 transition-all" />
                     {link.name}

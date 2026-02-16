@@ -8,9 +8,26 @@ import { quickLinks } from "@/contants";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Close mobile menu when clicking on a link
-  const handleLinkClick = () => {
+  const handleLinkClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
     setIsOpen(false);
+    handleNavigation(e, href);
+  };
+
+  const handleNavigation = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    e.preventDefault();
+    const elem = document.getElementById(href);
+
+    if (elem) {
+      elem.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -28,8 +45,8 @@ export default function Header() {
               {quickLinks.map((link, index) => (
                 <motion.a
                   key={link.name}
-                  href={link.href}
-                  className="relative px-5 py-2.5 rounded-xl font-medium text-gray-700 hover:text-purple-700 transition-colors group"
+                  onClick={(e) => handleNavigation(e, link.href)}
+                  className="relative px-5 py-2.5 rounded-xl font-medium text-gray-700 hover:text-purple-700 transition-colors group cursor-pointer"
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.08, ease: "easeOut" }}
@@ -103,7 +120,7 @@ export default function Header() {
                   x: isOpen ? 0 : -20,
                 }}
                 transition={{ delay: index * 0.05 }}
-                onClick={handleLinkClick}
+                onClick={(e) => handleLinkClick(e, link.href)}
               >
                 {link.name}
               </motion.a>
