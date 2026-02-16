@@ -44,10 +44,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  // **openGraph:** Controla como seu site aparece quando compartilhado em redes sociais.
   openGraph: {
-    title: "Hilo Language School | Aprenda Inglês com Confiança",
+    title: "Hilo Escola de Idiomas | Onde o seu Inglês Ganha Vida",
     description:
-      "Transforme seu inglês com aulas personalizadas. Presencial em Rio Claro-SP e online para todo o mundo. Professores nativos e metodologia comprovada.",
+      "Aulas personalizadas que respeitam o seu ritmo e abraçam a sua história. O mundo te espera. Presencial e online.",
     url: url_dominio, //url real
     siteName: "Hilo Language School",
     images: [
