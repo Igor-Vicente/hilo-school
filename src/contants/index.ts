@@ -17,8 +17,10 @@ import {
   Instagram,
   Facebook,
 } from "lucide-react";
-export type advantagesType = (typeof advantages)[0];
 
+export const url_dominio = process.env.URL_DOMINIO || "localhost";
+
+export type advantagesType = (typeof advantages)[0];
 export const advantages = [
   {
     icon: BookOpen,

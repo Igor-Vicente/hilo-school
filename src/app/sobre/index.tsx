@@ -12,11 +12,7 @@ export default function SobreNosPage() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section
-      id="sobre"
-      ref={ref}
-      className="py-20 px-4 bg-white overflow-hidden"
-    >
+    <section id="sobre" ref={ref} className="py-20 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div

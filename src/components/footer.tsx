@@ -31,11 +31,11 @@ export default function Footer() {
           >
             <div className="mb-6">
               <Image
-                src="/logo.png"
+                src="/icon-192.png"
                 width={80}
                 height={80}
                 alt="Hilo Language School"
-                className="rounded-full shadow-lg shadow-purple-500/30 ring-2 ring-purple-300/50"
+                className="rounded-full shadow-lg shadow-purple-500/30 ring ring-indigo-300"
               />
             </div>
             <h3 className="text-2xl font-bold mb-4 bg-linear-to-r from-purple-300 to-pink-300 bg-clip-text text-transparent">
