@@ -28,15 +28,17 @@ export const advantages = [
     icon: BookOpen,
     title: "Aprendizado Interativo",
     description:
-      "Aulas dinâmicas e participativas que mantêm o aluno engajado do início ao fim.",
+      "Aulas dinâmicas e participativas que o mantêm engajado do início ao fim.",
     color: "from-blue-500 to-cyan-500",
+    env: "Presencial | Online",
   },
   {
     icon: Users,
     title: "Para Todas as Idades",
     description:
-      "Cursos para Kids, Teens e Adults, com metodologia adaptada para cada fase da vida.",
+      "Cursos para crianças, jovens e adultos, com metodologia adaptada para cada fase da vida.",
     color: "from-purple-500 to-pink-500",
+    env: "Presencial | Online",
   },
   {
     icon: Smile,
@@ -44,6 +46,7 @@ export const advantages = [
     description:
       "Ambiente preparado especialmente para o público infantil, tornando o aprendizado mais leve e divertido.",
     color: "from-yellow-400 to-orange-500",
+    env: "Presencial",
   },
   {
     icon: Gamepad2,
@@ -51,6 +54,7 @@ export const advantages = [
     description:
       "Momentos lúdicos com jogos e atividades que estimulam o inglês de forma natural.",
     color: "from-green-400 to-emerald-500",
+    env: "Presencial",
   },
   {
     icon: ChefHat,
@@ -58,13 +62,15 @@ export const advantages = [
     description:
       "Aprenda inglês praticando receitas e vivenciando situações reais do dia a dia.",
     color: "from-red-400 to-rose-500",
+    env: "Presencial",
   },
   {
     icon: GraduationCap,
     title: "Professores Experientes",
     description:
-      "Equipe qualificada e preparada para desenvolver o máximo potencial de cada aluno.",
+      "Equipe qualificada e preparada para desenvolver o potencial máximo de cada aluno.",
     color: "from-indigo-500 to-blue-600",
+    env: "Presencial | Online",
   },
   {
     icon: Target,
@@ -72,6 +78,7 @@ export const advantages = [
     description:
       "Metodologia focada no seu perfil e estilo de aprendizagem para resultados mais rápidos.",
     color: "from-teal-500 to-green-600",
+    env: "Presencial | Online",
   },
 ];
 

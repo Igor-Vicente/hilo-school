@@ -85,6 +85,13 @@ function AdvantageCard({
           className={`absolute inset-0 bg-linear-to-br ${advantage.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
         />
 
+        {/* Environment Badge - Top */}
+        <div className="flex justify-end mb-4">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700 border border-green-200">
+            {advantage.env}
+          </span>
+        </div>
+
         {/* Icon */}
         <motion.div
           className={`inline-flex p-4 rounded-xl bg-linear-to-br ${advantage.color} mb-6 shadow-md`}

@@ -69,8 +69,8 @@ export default function HomePage() {
                 variants={itemVariants}
                 className="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed max-w-lg mx-auto lg:mx-0"
               >
-                Aulas presenciais em Rio Claro e online para todo o planeta.
-                Onde quer que você esteja, seu aprendizado não para.
+                Aulas presenciais em Rio Claro e online para todo o mundo. Onde
+                quer que você esteja, seu aprendizado não para.
               </motion.p>
 
               {/* CTA Buttons */}
